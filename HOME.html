@@ -1,0 +1,138 @@
+<!DOCTYPE HTML>
+<HTML>
+  <head>
+    <title>MURAKAMI</title>
+    <style>
+
+    *{
+      padding:0;
+      margin: 0;
+    }
+/*  *은 웹페이지의 패딩과 마진을 초기화시킴. */
+    li {
+      list-style-type: none;
+    }
+/* list 앞에 장식 제거 */
+    header {
+      width: 100%;
+      height: 100px;
+      margin: 0 auto;
+    }
+
+    #logo {
+      text-align: center;
+      margin: 20px 0 0 20px;
+      font-size: 30px;
+      font-family: serif;
+      margin-top: 15px;
+    }
+/* 제일 상단에 있는 로고를 지정 */
+
+    #main_menu {
+      margin-top: 40px;
+      font-family: Verdana;
+      font-size: 13px;
+      color: black;
+      text-align: center;
+      font-weight: bold;
+    }
+    /* 상단의 메인 메뉴의 값을 지정해 주어 상단 메뉴 디자인 */
+
+    #main_menu li{
+      display: inline-flex;
+      margin-left: 40px;
+    }
+/* inline-flex 값을 주어 1줄로 유연하게 움직일수 있음 */
+    #haruki {
+      display: block;
+      width: 100%;
+      padding-top: 10px;
+    }
+/*  매인 사진을 block 으로 주어 창이 움직여도 같은크기로 움직일수 있게 하였다*/
+
+    #main_contents {
+      width: 100%;
+      float: center;
+      margin-top: 25px;
+    }
+/* 메인 사진 밑의 내용을 전부 main_contents로 아이디매겨 넓이를 100퍼센트 사용하고 중앙으로 정렬하게 만들었다. */
+    #main_contents h3 {
+      font-size: 22px;
+      text-align: center;
+      font-family: serif;
+      padding:10px;
+    }
+
+    #main_contents p {
+      margin-top: 40px;
+      line-height: 180%;
+      font-size: 25px;
+      font-family:"proxima-nova", Arial;
+      text-align: center;
+      color: #b3b4ae;
+    }
+
+    a {
+      color: black;
+      text-decoration: none;
+    }
+    /* 링크들의 색깔을 검정색과 데코레이션을 없이 깔끔하게 하였다. */
+
+    *{
+      box-sizing: border-box;
+    }
+/* 넓이와 높이가 같아지는 효과 */
+    .image-container {
+      float: left;
+      width: 33.3%;
+      padding: 5px;
+    }
+
+    .imagefix {
+      content: "";
+      clear:both;
+      display: table;
+    }
+
+    /* 이미지를 왼쪽으로부터 디스플레이되게 하고 사진 한장당 33.3%의 크기를 주어
+    균일하게 움직일수 있게 하였다. */
+    </style>
+  </head>
+
+<body>
+  <header>
+    <div id='logo'>
+      <h3>MURAKAMI</h3>
+    </div>
+      <div id='main_menu'>
+        <li><a href="Home.html">HOME</a></li>
+        <li><a href="Author.html">AUTHOR</a></li>
+        <li><a href="WORKS.html">WORKS</a></li>
+        <li><a href="RESOURCES.html">RESOURCES</a></li>
+      </div>
+  </header>
+
+  <div id='haruki'>
+    <img src = "haruki.jpg" style="width:100%">
+  </div>
+
+    <div id='main_contents'>
+      <h3>MOMENT OF INSPIRATION</h3>
+      <p>In 1978 Murakami was in the bleachers of Jingu Stadium watching a baseball game<br> between the Yakult Swallows and the Hiroshima Carp when Dave Hilton, an American, came to bat. According to an oft-repeated story, in the instant that he hit a double, Murakami suddenly realized that he could write a novel. He went home and began writing that night.</p>
+    </div>
+
+  <div class = "imagefix">
+    <div class = "image-container">
+      <img src="book1.jpg" style="width:100%">
+    </div>
+    <div class = "image-container" >
+      <img src="book2.jpg" style="width:100%">
+    </div>
+    <div class = "image-container" >
+      <img src="book3.jpg" style="width:100%">
+    </div>
+  </div>
+  <!-- 각 이미지를 전부 image-container로 클래스를 지정하고 넓이를 100%로 만들어
+ css 태그를 활용하여 디자인하였다.-->
+</body>
+</html>
